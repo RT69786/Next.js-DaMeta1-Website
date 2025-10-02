@@ -1,0 +1,116 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.main12 {
+  //   border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .one-h2-tag {
+    background-color: #1cd44c;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+
+    h2 {
+      font-size: 36px;
+      color: white;
+
+      @include breakpoint(xl) {
+        font-size: 30px;
+      }
+
+      @include breakpoint(lg){
+        font-size: 27px;
+      }
+
+      @include breakpoint(sm){
+        text-align: center;
+        font-size: 23px;
+      }
+
+      @include breakpoint(xs){
+        font-size: 20px;
+        width: 70%;
+      }
+    }
+  }
+
+  .for-center-main12 {
+    // border: 2px solid blue;
+    max-width: 1700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+
+    .two-buttons {
+      // border: 2px solid red;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 45%;
+      padding: 40px 0px;
+
+      @include breakpoint(xl) {
+        width: 55%;
+      }
+
+      @include breakpoint(lg){
+        width: 75%;
+      }
+
+      @include breakpoint(sm){
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0px;
+      }
+
+      @include breakpoint(xs){
+        width: 55%;
+      }
+
+      // 🎯 This overrides the button only in this section
+      .gradient-btn {
+        background-image: linear-gradient(#fff, #fff),
+          linear-gradient(180deg, #000000, #00ff00);
+        color: #000; // text black since bg is white
+        border-radius: 20px;
+
+        @include breakpoint(sm){
+          margin-bottom: 20px;
+        }
+
+        &:hover {
+          background: #00ff00; // hover stays neon green
+          color: #000;
+        }
+      }
+    }
+
+    .line {
+      width: 55%;
+      background: #1cd44c;
+      height: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0px;
+
+      @include breakpoint(xl) {
+        width: 65%;
+      }
+
+      @include breakpoint(sm){
+        width: 75%;
+        margin: 10px 0px;
+      }
+    }
+  }
+}

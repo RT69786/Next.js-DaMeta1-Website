@@ -1,0 +1,258 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.main02 {
+  //   border: 2px solid red;
+  //   padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .one-h2 {
+    border: 15px solid #39ff14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+
+    @include breakpoint(xl) {
+      border: 10px solid #39ff14;
+    }
+
+    @include breakpoint(sm){
+      border: 8px solid #39ff14;
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: bold;
+      padding: 20px 0px;
+      letter-spacing: 5px;
+
+      @include breakpoint(xl) {
+        font-size: 30px;
+      }
+
+      @include breakpoint(lg) {
+        font-size: 23px;
+      }
+
+      @include breakpoint(sm){
+        font-size: 20px;
+      }
+
+      @include breakpoint(xxs){
+        font-size: 18px;
+      }
+    }
+  }
+
+  .for-center-main02 {
+    // border: 2px solid blue;
+    display: flex;
+    // max-width: 1700px;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+
+
+
+    .handling-two-divs {
+      // border: 2px solid red;
+      width: 43%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include breakpoint(xl) {
+        width: 44%;
+      }
+
+      @include breakpoint(lg) {
+        width: 55%;
+      }
+
+      @include breakpoint(md){
+        width: 65%;
+      }
+
+      @include breakpoint(sm){
+        display: flex;
+        flex-direction: column;
+        padding: 18px 0px;
+
+      }
+
+      .div-one {
+        // border: 2px solid red;
+
+        @include breakpoint(lg) {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        .ul-one {
+          // border: 2px solid blue;
+          padding: 23px 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          // padding-bottom: 10px;
+
+          li {
+            list-style-type: none;
+
+            h2 {
+              font-size: 42px;
+              color: white;
+
+              @include breakpoint(xl) {
+                font-size: 40px;
+              }
+
+              @include breakpoint(lg) {
+                font-size: 32px;
+              }
+            }
+
+            p {
+              font-size: 33px;
+              color: #39ff14;
+
+              @include breakpoint(xl) {
+                font-size: 30px;
+              }
+
+              @include breakpoint(lg) {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+
+        .ul-two {
+          // border: 2px solid green;
+          padding: 23px 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          li {
+            list-style-type: none;
+
+            h2 {
+              font-size: 40px;
+              color: white;
+
+              @include breakpoint(xl) {
+                font-size: 40px;
+              }
+
+              @include breakpoint(lg) {
+                font-size: 32px;
+              }
+            }
+
+            p {
+              font-size: 33px;
+              color: #39ff14;
+
+              @include breakpoint(xl) {
+                font-size: 30px;
+              }
+
+              @include breakpoint(lg) {
+                font-size: 25px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+
+      .div-two {
+        //   border: 2px solid purple;
+        //  padding-left: 100px;
+
+        .ul-three {
+          // border: 2px solid purple;
+          padding: 23px 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          li {
+            list-style-type: none;
+
+            h2 {
+              font-size: 42px;
+              color: white;
+
+              @include breakpoint(xl) {
+                font-size: 40px;
+              }
+
+              @include breakpoint(lg) {
+                font-size: 32px;
+              }
+            }
+
+            p {
+              font-size: 33px;
+              color: #39ff14;
+
+              @include breakpoint(xl) {
+                font-size: 30px;
+              }
+
+              @include breakpoint(lg) {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+
+        .ul-four {
+          // border: 2px solid green;
+          padding: 23px 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          li {
+            list-style-type: none;
+
+            h2 {
+              font-size: 42px;
+              color: white;
+
+              @include breakpoint(xl) {
+                font-size: 40px;
+              }
+
+              @include breakpoint(lg) {
+                font-size: 32px;
+              }
+            }
+
+            p {
+              font-size: 33px;
+              color: #39ff14;
+
+              @include breakpoint(xl) {
+                font-size: 30px;
+              }
+
+              @include breakpoint(lg) {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

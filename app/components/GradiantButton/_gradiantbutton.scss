@@ -1,0 +1,75 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.gradient-btn {
+  position: relative;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-family: "Orbitron", sans-serif; // futuristic font
+  color: white;
+  background: transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+
+  @include breakpoint(sm) {
+    font-size: 12px;
+  }
+
+  @include breakpoint(xs){
+    font-size: 11px;
+  }
+
+  // Gradient border trick
+  border: 4px solid transparent;
+  background-image: linear-gradient(#000, #000),
+    linear-gradient(180deg, #ffffff, #00ff00);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+
+  @include breakpoint(xs){
+    width: 100%;
+  }
+
+  .arrow {
+    font-size: 20px;
+    color: #ccc;
+    transition: all 0.3s ease;
+  }
+
+  // --- Hover effect ---
+  &:hover {
+    background: #00ff00; // whole button neon green
+    color: black; // text turns black
+    box-shadow: 0 6px 15px rgba(0, 255, 0, 0.5);
+    // transition: color 0.3s ease;
+
+    .arrow {
+      color: black;
+
+      // Swap arrow direction: › becomes ‹
+      &:first-child::before {
+        content: "‹"; // left arrow
+      }
+
+      &:last-child::before {
+        content: "›"; // right arrow stays same
+      }
+
+      // Hide original arrow text
+      font-size: 0;
+    }
+  }
+
+  // Reset original arrows when not hovered
+  .arrow:first-child::before,
+  .arrow:last-child::before {
+    content: "›"; // default both are right arrows
+    font-size: 20px;
+  }
+}

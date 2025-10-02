@@ -1,0 +1,31 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.button {
+  border: 2px solid #1cd44c;
+  width: 145%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 16px;
+  border-radius: 30px;
+  background: transparent; // default background
+  cursor: pointer; // make it look clickable
+  transition: all 0.3s ease; // smooth hover effect
+
+  
+
+  h5 {
+    font-size: 14px;
+    color: white;
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    background-color: #1cd44c; // fill green on hover
+
+    h5 {
+      color: black; // make text readable when bg is green
+    }
+  }
+}

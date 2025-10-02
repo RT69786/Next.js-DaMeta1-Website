@@ -1,0 +1,83 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.main13 {
+  // border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 0px;
+
+  @include breakpoint(xs){
+    padding: 20px 0px;
+  }
+
+  h2 {
+    font-size: 36px;
+    padding-bottom: 25px;
+
+    @include breakpoint(xl){
+      font-size: 30px;
+      padding-bottom: 18px;
+    }
+
+    @include breakpoint(sm){
+      font-size: 27px;
+    }
+
+    @include breakpoint(xs){
+      font-size:  25px;
+    }
+  }
+
+  h3 {
+    font-size: 30px;
+    padding-bottom: 25px;
+
+    @include breakpoint(xl){
+      font-size: 25px;
+      padding-bottom: 18px;
+    }
+
+    @include breakpoint(sm){
+      font-size: 20px;
+    }
+  }
+
+  p {
+    font-size: 25px;
+    color: #1cd44c;
+    text-align: center;
+    
+    @include breakpoint(xl){
+      font-size: 20px;
+    }
+
+    @include breakpoint(sm){
+      font-size: 15px;
+    }
+  }
+
+  .slider {
+    // border: 2px solid red;
+    margin: 35px 0px;
+
+    @include breakpoint(lg){
+      width: 95%;
+    }
+
+    @include breakpoint(sm){
+      width: 95%;
+    }
+  }
+
+  .line-two {
+    width: 90%;
+    background: #1cd44c;
+    height: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+  }
+}

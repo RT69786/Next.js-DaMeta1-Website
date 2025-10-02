@@ -1,0 +1,65 @@
+@import "./globalStyling/variables";
+@import "./globalStyling/mixin";
+
+
+
+/* ===== RESET STYLES ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset heading and text sizes */
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: normal;
+  font-size: inherit;
+}
+
+/* Images: responsive by default */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Form elements clean-up */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-family: "Space Grotesk font" , "Demi";
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+  margin: 0;
+
+}

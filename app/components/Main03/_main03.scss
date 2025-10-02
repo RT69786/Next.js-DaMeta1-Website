@@ -1,0 +1,111 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.main03 {
+  //   border: 2px solid red;
+  padding: 5% 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(sm){
+    padding: 9% 0px;
+  }
+
+  .for-center-main03 {
+    // border: 2px solid blue;
+    max-width: 1700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint(xl) {
+      width: 95%;
+    }
+
+    h2 {
+      font-size: 36px;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 5px;
+      padding-bottom: 25px;
+
+      @include breakpoint(xl) {
+        font-size: 30px;
+      }
+
+      @include breakpoint(lg) {
+        font-size: 23px;
+        padding-bottom: 20px;
+      }
+
+      @include breakpoint(sm) {
+        font-size: 22px;
+        width: 100%;
+        line-height: 1.5;
+      }
+    }
+
+    .one-ul {
+      //   border: 2px solid red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+          text-align: center;
+          font-size: 27px;
+          letter-spacing: 1px;
+          padding-bottom: 23px;
+          color: #39ff14;
+
+          @include breakpoint(xl) {
+            font-size: 23px;
+          }
+
+          @include breakpoint(lg) {
+            font-size: 19px;
+            padding-bottom: 17px;
+          }
+
+          @include breakpoint(sm) {
+            font-size: 17px;
+          }
+
+          @include breakpoint(xs) {
+            width: 75%;
+          }
+        }
+
+        p {
+          text-align: center;
+          font-size: 18px;
+          line-height: 1.7;
+          letter-spacing: 2px;
+
+          @include breakpoint(lg) {
+            font-size: 15px;
+            width: 100%;
+          }
+
+          @include breakpoint(sm) {
+            font-size: 14px;
+            width: 90%;
+          }
+
+          @include breakpoint(xxs){
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.main10 {
+  //   border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 0px;
+
+  @include breakpoint(xs){
+    padding: 35px 0px;
+  }
+
+  .for-center-main10 {
+    // border: 2px solid blue;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .div-one {
+      // border: 2px solid green;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      @include breakpoint(sm) {
+        width: 90%;
+      }
+
+      @include breakpoint(xs){
+        padding-bottom: 25px;
+      }
+
+      h2 {
+        font-size: 36px;
+        text-align: center;
+        padding: 15px 0px;
+
+        @include breakpoint(lg) {
+          font-size: 27px;
+        }
+
+        @include breakpoint(sm) {
+          font-size: 30px;
+        }
+
+        @include breakpoint(xs){
+          font-size: 27px;
+        }
+      }
+
+      .three-list-items-one {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+
+        li {
+          list-style-type: none;
+          display: flex;
+          align-items: center;
+          padding: 15px 0px;
+
+          p {
+            font-size: 18px;
+            padding-left: 20px;
+
+            @include breakpoint(lg) {
+              font-size: 15px;
+            }
+
+            @include breakpoint(md) {
+              width: 85%;
+            }
+
+            &:hover {
+              color: #1cd44c;
+            }
+          }
+
+          .icon {
+            font-size: 45px;
+            color: #1cd44c;
+
+            @include breakpoint(lg) {
+              padding-left: 20px;
+              font-size: 65px;
+            }
+          }
+        }
+      }
+    }
+
+    .div-two {
+      // border: 2px solid purple;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      @include breakpoint(sm) {
+        width: 90%;
+      }
+
+      h2 {
+        font-size: 36px;
+        text-align: center;
+        padding: 15px 0px;
+
+        @include breakpoint(lg) {
+          font-size: 27px;
+        }
+
+        @include breakpoint(sm) {
+          font-size: 28px;
+        }
+
+        @include breakpoint(xs){
+          font-size: 27px;
+        }
+
+        @include breakpoint(xxs){
+          width: 100%;
+        }
+      }
+
+      .three-list-items-two {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+
+        li {
+          list-style-type: none;
+          display: flex;
+          align-items: center;
+          padding: 15px 0px;
+
+          p {
+            font-size: 18px;
+            padding-left: 20px;
+
+            @include breakpoint(lg) {
+              font-size: 15px;
+            }
+
+            &:hover {
+              color: #1cd44c;
+            }
+          }
+
+          .icon {
+            font-size: 45px;
+            color: #1cd44c;
+
+            @include breakpoint(lg) {
+              padding-left: 20px;
+              font-size: 65px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

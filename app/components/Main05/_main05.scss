@@ -1,0 +1,119 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.main05 {
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0px;
+
+  @include breakpoint(sm){
+    padding: 6% 0px;
+  }
+
+  .for-center-main05 {
+    // border: 2px solid blue;
+    max-width: 1700px;
+    width: 100%;
+
+    @include breakpoint(hd) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ul-one {
+      // border: 2px solid green;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include breakpoint(hd) {
+        width: 95%;
+      }
+
+      @include breakpoint(sm){
+        width: 90%;
+      }
+
+      @include breakpoint(xs){
+        width: 90%;
+      }
+
+      li {
+        list-style-type: none;
+
+        h2 {
+          font-size: 36px;
+          padding-bottom: 25px;
+          font-weight: bold;
+
+          @include breakpoint(xl) {
+            font-size: 30px;
+            padding-bottom: 21px;
+          }
+
+          @include breakpoint(lg) {
+            font-size: 26px;
+            padding-bottom: 19px;
+          }
+          
+          @include breakpoint(sm){
+            font-size: 25px;
+          }
+
+          
+        }
+
+        h3 {
+          font-size: 27px;
+          padding-bottom: 10px;
+          color: #169135;
+
+          @include breakpoint(xl) {
+            font-size: 25px;
+          }
+
+          @include breakpoint(lg) {
+            font-size: 19px;
+          }
+
+          @include breakpoint(xxs){
+            font-size: 17px;
+          }
+        }
+
+        h4 {
+          font-size: 23px;
+          color: #169135;
+
+          @include breakpoint(lg) {
+            font-size: 18px;
+          }
+
+          @include breakpoint(xxs){
+            font-size: 15px;
+          }
+        }
+
+        p {
+          text-align: center;
+          font-size: 18px;
+          letter-spacing: 3px;
+          line-height: 1.6;
+          padding-top: 25px;
+
+          @include breakpoint(lg) {
+            font-size: 15px;
+            padding-top: 20px;
+          }
+
+          @include breakpoint(xxs){
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

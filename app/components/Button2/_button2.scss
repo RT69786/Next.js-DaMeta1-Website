@@ -1,0 +1,70 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.explore-button {
+    // border: 2px solid red;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 7px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: #1cd44c;
+
+    @include breakpoint(hd){
+        width: 30%;
+    }
+
+    @include breakpoint(xl){
+        width: 40%;
+    }
+
+    @include breakpoint(lg){
+        width: 50%;
+    }
+
+    @include breakpoint(md){
+        width: 45%;
+    }
+
+    @include breakpoint(sm){
+        width: 35%;
+    }
+
+    
+
+
+    
+
+    h5 {
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+
+        @include breakpoint(lg){
+            font-size: 12px;
+        }
+
+        @include breakpoint(md){
+            font-size: 10px;
+        }
+
+        @include breakpoint(sm){
+            font-size: 13px;
+        }
+
+        @include breakpoint(xxs){
+       font-size: 10px;
+    }
+   }
+
+   &:hover {
+    background-color: white;
+    transition: all 0.3s ease;
+
+    h5 {
+        color: black;
+    }
+   }
+}

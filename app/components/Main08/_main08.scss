@@ -1,0 +1,105 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.main08 {
+  //   border: 2px solid red; // remove after debugging
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 0;
+
+  .small-div {
+    // border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+
+    h2 {
+      font-size: 36px;
+      color: #1cd44c;
+      padding: 20px 0;
+
+      @include breakpoint(lg) {
+        font-size: 25px;
+        padding: 15px 0px;
+      }
+    }
+  }
+
+  .for-center-main08 {
+    // border: 2px solid blue;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    padding-top: 2%;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(lg) {
+      padding-top: 4%;
+    }
+
+    @include breakpoint(sm) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 6%;
+    }
+
+    @include breakpoint(xs) {
+      padding-top: 8%;
+    }
+
+    .video-main08 {
+      //   border: 2px solid green;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include breakpoint(sm) {
+        width: 100%;
+        padding-bottom: 25px;
+      }
+
+      .main08-iframe {
+        width: 75%;
+        aspect-ratio: 16 / 9; // keeps proper video ratio
+        // border-radius: 12px;  // modern rounded corners
+      }
+    }
+
+    .text-main08 {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include breakpoint(sm) {
+        width: 95%;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: center;
+        width: 85%;
+
+        @include breakpoint(lg) {
+          font-size: 14px;
+        }
+
+        @include breakpoint(md) {
+          font-size: 13px;
+        }
+
+        @include breakpoint(xs) {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

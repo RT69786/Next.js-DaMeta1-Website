@@ -1,0 +1,414 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.main06 {
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 0px;
+
+  @include breakpoint(lg) {
+    padding: 10px 0px;
+  }
+
+  .for-center-main06 {
+    // border: 2px solid blue;
+    max-width: 1700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .div-one {
+      // border: 2px solid red;
+      display: flex;
+      justify-content: space-between;
+      width: 75%;
+
+      @include breakpoint(xl) {
+        width: 85%;
+      }
+
+      @include breakpoint(lg) {
+        width: 95%;
+      }
+
+      @include breakpoint(sm) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ul-one {
+        // border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        padding: 25px 0px;
+
+        @include breakpoint(sm) {
+          width: 90%;
+          padding-bottom: 25px;
+        }
+
+        &:hover {
+          box-shadow: 0 0 55px 7px rgba(0, 255, 0, 0.6);
+          transition: all 0.3s ease-in;
+          transition: all 0.3s ease-out;
+        }
+
+        img {
+          width: 50%;
+          padding-bottom: 35px;
+        }
+
+        h3 {
+          font-size: 25px;
+          padding-bottom: 10px;
+          text-align: center;
+
+          @include breakpoint(lg) {
+            font-size: 21px;
+          }
+
+          @include breakpoint(sm) {
+            font-size: 25px;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          text-align: center;
+          width: 75%;
+
+          @include breakpoint(hd) {
+            line-height: 1.6;
+          }
+
+          @include breakpoint(xl) {
+            width: 85%;
+          }
+
+          @include breakpoint(lg) {
+            font-size: 16px;
+            width: 75%;
+          }
+
+          @include breakpoint(xs){
+            width: 90%;
+          }
+        }
+      }
+
+      .ul-two {
+        // border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        padding: 25px 0px;
+
+        @include breakpoint(sm) {
+          width: 90%;
+          padding-bottom: 25px;
+        }
+
+        &:hover {
+          box-shadow: 0 0 55px 7px rgba(0, 255, 0, 0.6);
+          transition: all 0.3s ease-in;
+          transition: all 0.3s ease-out;
+        }
+
+        img {
+          width: 50%;
+          padding-bottom: 35px;
+        }
+
+        h3 {
+          font-size: 25px;
+          padding-bottom: 10px;
+          text-align: center;
+
+          @include breakpoint(lg) {
+            font-size: 21px;
+          }
+
+          @include breakpoint(sm) {
+            font-size: 25px;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          text-align: center;
+          width: 95%;
+
+          @include breakpoint(hd) {
+            line-height: 1.6;
+          }
+
+          @include breakpoint(lg) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .ul-three {
+        // border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        padding: 25px 0px;
+
+        @include breakpoint(sm) {
+          width: 90%;
+          padding-bottom: 25px;
+        }
+
+        &:hover {
+          box-shadow: 0 0 55px 7px rgba(0, 255, 0, 0.6);
+          transition: all 0.3s ease-in;
+          transition: all 0.3s ease-out;
+        }
+
+        img {
+          width: 50%;
+          padding-bottom: 35px;
+        }
+
+        h3 {
+          font-size: 25px;
+          padding-bottom: 10px;
+          text-align: center;
+
+          @include breakpoint(lg) {
+            font-size: 21px;
+          }
+
+          @include breakpoint(sm) {
+            font-size: 25px;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          text-align: center;
+          width: 65%;
+
+          @include breakpoint(hd) {
+            line-height: 1.6;
+            width: 75%;
+          }
+
+          @include breakpoint(lg) {
+            font-size: 16px;
+            width: 90%;
+          }
+        }
+      }
+    }
+
+    .div-two {
+      // border: 2px solid blue;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 40px;
+      width: 75%;
+
+      @include breakpoint(xl) {
+        width: 85%;
+        padding-top: 45px;
+      }
+
+      @include breakpoint(lg) {
+        width: 95%;
+      }
+
+      @include breakpoint(sm) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+      }
+
+      .ul-four {
+        // border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        padding: 25px 0px;
+
+        @include breakpoint(sm) {
+          width: 90%;
+          padding-bottom: 25px;
+        }
+
+        &:hover {
+          box-shadow: 0 0 55px 7px rgba(0, 255, 0, 0.6);
+          transition: all 0.3s ease-in;
+          transition: all 0.3s ease-out;
+        }
+
+        img {
+          width: 50%;
+          padding-bottom: 35px;
+        }
+
+        h3 {
+          font-size: 25px;
+          padding-bottom: 10px;
+          text-align: center;
+
+          @include breakpoint(lg) {
+            font-size: 21px;
+          }
+
+          @include breakpoint(sm) {
+            font-size: 25px;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          text-align: center;
+          width: 85%;
+
+          @include breakpoint(hd) {
+            line-height: 1.6;
+          }
+
+          @include breakpoint(xl) {
+            width: 90%;
+          }
+
+          @include breakpoint(lg) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .ul-five {
+        // border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        padding: 25px 0px;
+
+        @include breakpoint(sm) {
+          width: 90%;
+          padding-bottom: 25px;
+        }
+
+        &:hover {
+          box-shadow: 0 0 55px 7px rgba(0, 255, 0, 0.6);
+          transition: all 0.3s ease-in;
+          transition: all 0.3s ease-out;
+        }
+
+        img {
+          width: 50%;
+          padding-bottom: 35px;
+        }
+
+        h3 {
+          font-size: 25px;
+          padding-bottom: 10px;
+          text-align: center;
+
+          @include breakpoint(lg) {
+            font-size: 21px;
+          }
+
+          @include breakpoint(sm) {
+            font-size: 25px;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          text-align: center;
+          width: 95%;
+
+          @include breakpoint(hd) {
+            line-height: 1.6;
+          }
+
+          @include breakpoint(lg) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .ul-six {
+        // border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        padding: 25px 0px;
+
+        @include breakpoint(sm) {
+          width: 90%;
+          padding-bottom: 25px;
+        }
+
+        &:hover {
+          box-shadow: 0 0 55px 7px rgba(0, 255, 0, 0.6);
+          transition: all 0.3s ease-in;
+          transition: all 0.3s ease-out;
+        }
+
+        img {
+          width: 50%;
+          padding-bottom: 35px;
+
+          @include breakpoint(xl) {
+            padding-bottom: 20px;
+          }
+        }
+
+        h3 {
+          font-size: 25px;
+          padding-bottom: 10px;
+          text-align: center;
+
+          @include breakpoint(lg) {
+            font-size: 21px;
+          }
+
+          @include breakpoint(sm) {
+            font-size: 25px;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          text-align: center;
+          width: 95%;
+
+          @include breakpoint(hd) {
+            line-height: 1.6;
+          }
+
+          @include breakpoint(lg) {
+            font-size: 16px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

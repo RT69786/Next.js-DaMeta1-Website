@@ -1,0 +1,81 @@
+@import "../../globalStyling/mixin";
+@import "../../globalStyling/variables";
+
+.small-card {
+  border: 2px solid white;
+  width: 25%; // will be handled better in parent container
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  border-radius: 12px;
+  padding: 20px;
+
+  @include breakpoint(lg){
+    width: 35%;
+  }
+
+  @include breakpoint(lg){
+    width: 30%;
+  }
+
+  @include breakpoint(sm){
+    margin-bottom: 20px;
+    width: 85%;
+  }
+
+
+  &:hover {
+    background-color: black;
+    box-shadow: 0 0 20px 8px rgba(0, 255, 0, 0.5);
+      transition: all 0.3s ease-in;
+
+    h2 {
+      color: #1cd44c;
+        transition: all 0.3s ease-in;
+    }
+  }
+
+  .chair-pic {
+    width: 60%;
+    padding: 15px 0px;
+  }
+
+  h2 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+
+    @include breakpoint(xl){
+      font-size: 20px;
+    }
+
+    @include breakpoint(lg){
+      font-size: 16px;
+    }
+
+    @include breakpoint(sm){
+      font-size: 25px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    width: 90%;
+
+      @include breakpoint(xl){
+      font-size: 14px;
+    }
+
+    @include breakpoint(lg){
+      font-size: 13px;
+    }
+
+    @include breakpoint(sm){
+      font-size: 18px;
+    }
+  }
+}
