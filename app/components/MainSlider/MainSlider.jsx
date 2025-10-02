@@ -2,7 +2,7 @@
 
 import React from "react";
 import Slider from "react-slick";
-import "./_mainslider.scss";
+import "./_mainSlider.scss";
 
 const MainSlider = () => {
   const settings = {
